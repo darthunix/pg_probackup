@@ -71,6 +71,9 @@ extern const char  *PROGRAM_EMAIL;
 #define DATABASE_FILE_LIST		"backup_content.control"
 #define PG_BACKUP_LABEL_FILE	"backup_label"
 #define PG_TABLESPACE_MAP_FILE	"tablespace_map"
+#ifdef GP_TABLESPACE_VERSION_DIRECTORY
+#define TABLESPACE_VERSION_DIRECTORY GP_TABLESPACE_VERSION_DIRECTORY
+#endif
 #define RELMAPPER_FILENAME		"pg_filenode.map"
 #define EXTERNAL_DIR			"external_directories/externaldir"
 #define DATABASE_MAP			"database_map"
